@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES6", // Compile to ES6 for better Chrome support
+        "module": "ESNext", // Use ES modules for bundling
+        "moduleResolution": "node", // Use Node module resolution
+        "strict": true, // Enable strict type-checking options
+        "esModuleInterop": true, // Allow default imports from modules with no default export
+        "skipLibCheck": true, // Skip checking library files
+        "resolveJsonModule": true, // Allow importing JSON files
+        "outDir": "./dist", // Output directory for compiled files
+        "baseUrl": "./src", // Base directory for relative module imports
+        "jsx": "react", // Use JSX for React (if applicable)
+        "lib": [
+            "dom",
+            "esnext"
+        ] // Use ESNext and DOM types for Chrome Extensions
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

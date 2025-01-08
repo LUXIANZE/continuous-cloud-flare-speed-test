@@ -1,0 +1,35 @@
+{
+    "name": "Continuous Cloudflare Speed Test Extension",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "images/speed-16.png",
+        "32": "images/speed-32.png",
+        "48": "images/speed-48.png",
+        "128": "images/speed-128.png"
+    },
+    "background": {
+        "service_worker": "dist/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "dist/content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "dist/popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}

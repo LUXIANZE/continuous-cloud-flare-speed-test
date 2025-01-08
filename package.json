@@ -1,0 +1,36 @@
+{
+  "name": "continuous-cloud-flare-speed-test",
+  "version": "1.0.0",
+  "description": "Objective: Automate network data collection and analysis Solution: - Chrome plugin - https://github.com/cloudflare/speedtest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LUXIANZE/continuous-cloud-flare-speed-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LUXIANZE/continuous-cloud-flare-speed-test/issues"
+  },
+  "homepage": "https://github.com/LUXIANZE/continuous-cloud-flare-speed-test#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@types/chrome": "^0.0.290",
+    "@types/node": "^22.10.5",
+    "babel-loader": "^9.2.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-extension-manifest-plugin": "^0.8.0"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.6.3"
+  }
+}
